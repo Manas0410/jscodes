@@ -10,14 +10,14 @@ function patt(n){
     }
     else{
         res = ""
-        for(let i =1 ; i<=n ;i++){
+        for (let i =1 ; i<=n ;i++){
             // add left space
             for(let k=1;k<i;k++){
                 res += ' ';
             }
             
              // add left *
-            for(let j =n ;j <=i; j--){
+            for(let j =n ;j >=i; j--){
                 res +='*' ;
             }
             //add right *
@@ -34,4 +34,4 @@ function patt(n){
     }
 
 const pattern = patt(5);
-console.log(pattern)
+console.log(pattern);
