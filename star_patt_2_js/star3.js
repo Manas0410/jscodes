@@ -15,20 +15,21 @@ function patt(n){
                 res +=' ' ;
             }
             res+='*';
-            
+
             // add left space
             for(k=1;k<i;k++){
                 res += ' ';
             }
             //add right space and *
-            for(l=1;l<i;l++){
+            for(l=1;l<i-1;l++){
                 res+=' '
             }
-            res += '*';
+            if(i !==1){
+            res += '*';}
 
             res += '\n';
         }
-        for(let m =0; m<(2*n)+1 ;i++){
+        for(let m =0; m<(2*n)-1 ;m++){
             res += '*';
         }
         return res
