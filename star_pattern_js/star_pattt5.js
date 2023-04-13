@@ -1,8 +1,8 @@
-// *****
-// ****
-// ***
-// **
-// *
+// 12345
+// 2345
+// 345
+// 45
+// 5
 
 function patt(n){
     if (typeof n !=='number' || n<=0 || null){
@@ -10,9 +10,9 @@ function patt(n){
     }
     else{
         res = ""
-        for(let i = n ; i>0 ;i--){
-            for(let j =1 ;j <= i; j++){
-                res +='*' ;
+        for(let i = 1 ; i<=5 ;i++){
+            for(let j =i ;j <=5; j++){
+                res += j ;
             }
             res += '\n';
         }
@@ -21,5 +21,5 @@ function patt(n){
     }
 }
 
-const pattern = patt(5);
+const pattern = patt(5.8);
 console.log(pattern)

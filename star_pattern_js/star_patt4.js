@@ -4,7 +4,7 @@
 // ****
 // *****
 function patt(n){
-    if (n<0){
+    if (typeof n !=='number' || n<=0 || null){
         return 'enter valid input';
     }
     else{
